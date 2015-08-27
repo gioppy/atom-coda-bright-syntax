@@ -1,0 +1,57 @@
+//JS
+
+.js{
+  &.type,
+  &.modifier,
+  &.variable{
+    color: @blue;
+
+    &.instance{
+      color: @dark;
+    }
+  }
+
+  &.keyword{
+    &.control{
+      color: @blue;
+    }
+
+    &.operator{
+      color: @blue;
+    }
+  }
+
+  &.constant{
+    &.null,
+    &.numeric,
+    &.boolean{
+      color: @attribute-name;
+    }
+
+    &.dom{
+      color: @builtin;
+    }
+  }
+
+  &.property{
+    &.name{
+      color: @attribute-name;
+    }
+  }
+
+  &.string{
+    color: @red;
+  }
+
+  &.function{
+    &.name{
+      color: @teal;
+    }
+  }
+
+  &.square{
+    &.brace{
+      color: @operator;
+    }
+  }
+}

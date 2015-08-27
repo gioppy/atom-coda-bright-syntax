@@ -1,0 +1,54 @@
+// CSS
+
+.css {
+
+  .string{
+    color: @purple;
+    background-color: @cursor-line;
+  }
+
+  .entity{
+    color: @dark;
+
+    &.attribute-name{
+      color: @dark;
+
+      &.pseudo-element{
+        color: @green;
+      }
+    }
+  }
+
+  .property-name{
+    color: @blue;
+  }
+
+  .constant{
+    color: @green;
+
+    &.color{
+      color: @purple;
+    }
+
+    &.numeric{
+      color: @red;
+    }
+  }
+
+  .function{
+    color: @green;
+
+    &.punctuation{
+      color: @dark;
+    }
+  }
+
+  .keyword{
+    &.other{
+      &.unit{
+        color: @red;
+      }
+    }
+    color: @red;
+  }
+}

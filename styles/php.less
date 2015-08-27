@@ -1,0 +1,85 @@
+.php{
+  &.constant{
+    color: @dark;
+
+    &.numeric,
+    &.language{
+      color: @attribute-name;
+    }
+  }
+
+  &.storage{
+    color: @blue;
+  }
+
+  &.punctuation{
+    &.embedded{
+      &.begin,
+      &.end{
+        color: @red;
+      }
+    }
+
+    &.definition{
+      &.variable{
+        color: @variable;
+      }
+    }
+  }
+
+  &.support{
+    &.basic_functions{
+      color: @builtin;
+    }
+
+    &.function{
+      color: @variable;
+    }
+
+    &.construct{
+      color: @blue;
+    }
+  }
+
+  &.variable{
+    color: @variable;
+
+    &.property{
+      color: @dark;
+    }
+  }
+
+  &.string{
+    color: @red;
+
+    &.operator{
+      color: @dark;
+    }
+  }
+
+  &.keyword{
+    &.operator{
+      color: @operator;
+    }
+
+    &.control{
+      color: @blue;
+    }
+  }
+
+  &.type{
+    &.function{
+      color: @blue;
+    }
+  }
+
+  &.entity{
+    &.function{
+      color: @teal;
+    }
+  }
+
+  &.function-call{
+    color: @teal;
+  }
+}

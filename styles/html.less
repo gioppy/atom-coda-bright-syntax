@@ -1,0 +1,32 @@
+@import "colors";
+
+// HTML
+.html,
+.xml{
+  .tag {
+    color: @blue;
+
+    &.sgml{
+      color: @light-gray;
+    }
+  }
+
+  .entity {
+    &.attribute-name{
+      color: @attribute-name;
+
+      + .string{
+        color: @green;
+      }
+    }
+
+    &.constant{
+      color: @attribute-name;
+    }
+  }
+
+  .comment {
+    color: @light-gray;
+    font-style: italic;
+  }
+}
