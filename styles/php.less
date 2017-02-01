@@ -1,85 +1,85 @@
-.php{
-  &.constant{
+.syntax--php{
+  &.syntax--constant{
     color: @dark;
 
-    &.numeric,
-    &.language{
+    &.syntax--numeric,
+    &.syntax--language{
       color: @attribute-name;
     }
   }
 
-  &.storage{
+  &.syntax--storage{
     color: @blue;
   }
 
-  &.punctuation{
-    &.embedded{
-      &.begin,
-      &.end{
+  &.syntax--punctuation{
+    &.syntax--embedded{
+      &.syntax--begin,
+      &.syntax--end{
         color: @red;
       }
     }
 
-    &.definition{
-      &.variable{
+    &.syntax--definition{
+      &.syntax--variable{
         color: @variable;
       }
     }
   }
 
-  &.support{
-    &.basic_functions{
+  &.syntax--support{
+    &.syntax--basic_functions{
       color: @builtin;
     }
 
-    &.function{
+    &.syntax--function{
       color: @variable;
     }
 
-    &.construct{
+    &.syntax--construct{
       color: @blue;
     }
   }
 
-  &.variable{
+  &.syntax--variable{
     color: @variable;
 
-    &.property{
+    &.syntax--property{
       color: @dark;
     }
   }
 
-  &.string{
+  &.syntax--string{
     color: @red;
 
-    &.operator{
+    &.syntax--operator{
       color: @dark;
     }
   }
 
-  &.keyword{
-    &.operator{
+  &.syntax--keyword{
+    &.syntax--operator{
       color: @operator;
     }
 
-    &.control{
+    &.syntax--control{
       color: @blue;
     }
   }
 
-  &.type{
-    &.function{
+  &.syntax--type{
+    &.syntax--function{
       color: @blue;
     }
   }
 
-  &.entity{
-    &.function{
+  &.syntax--entity{
+    &.syntax--function{
       color: @teal;
     }
   }
 
-  &.function-call{
+  &.syntax--function-call{
     color: @teal;
   }
 }
