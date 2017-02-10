@@ -1,56 +1,56 @@
 //JS
 
-.js{
-  &.type,
-  &.modifier,
-  &.variable{
+.syntax--js{
+  &.syntax--type,
+  &.syntax--modifier,
+  &.syntax--variable{
     color: @blue;
 
-    &.instance{
+    &.syntax--instance{
       color: @dark;
     }
   }
 
-  &.keyword{
-    &.control{
+  &.syntax--keyword{
+    &.syntax--control{
       color: @blue;
     }
 
-    &.operator{
+    &.syntax--operator{
       color: @blue;
     }
   }
 
-  &.constant{
-    &.null,
-    &.numeric,
-    &.boolean{
+  &.syntax--constant{
+    &.syntax--null,
+    &.syntax--numeric,
+    &.syntax--boolean{
       color: @attribute-name;
     }
 
-    &.dom{
+    &.syntax--dom{
       color: @builtin;
     }
   }
 
-  &.property{
-    &.name{
+  &.syntax--property{
+    &.syntax--name{
       color: @attribute-name;
     }
   }
 
-  &.string{
+  &.syntax--string{
     color: @red;
   }
 
-  &.function{
-    &.name{
+  &.syntax--function{
+    &.syntax--name{
       color: @teal;
     }
   }
 
-  &.square{
-    &.brace{
+  &.syntax--square{
+    &.syntax--brace{
       color: @operator;
     }
   }

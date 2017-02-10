@@ -1,31 +1,31 @@
 @import "colors";
 
 // HTML
-.html,
-.xml{
-  .tag {
+.syntax--html,
+.syntax--xml{
+  .syntax--tag {
     color: @blue;
 
-    &.sgml{
+    &.syntax--sgml{
       color: @light-gray;
     }
   }
 
-  .entity {
-    &.attribute-name{
+  .syntax--entity {
+    &.syntax--attribute-name{
       color: @attribute-name;
 
-      + .string{
+      + .syntax--string{
         color: @green;
       }
     }
 
-    &.constant{
+    &.syntax--constant{
       color: @attribute-name;
     }
   }
 
-  .comment {
+  .syntax--comment {
     color: @light-gray;
     font-style: italic;
   }
